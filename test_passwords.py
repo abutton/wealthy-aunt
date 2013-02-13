@@ -54,5 +54,61 @@ def test_Isaiah_pet1_first():
                                 "Sparky", "Mia", "Ava", "Serenity", "Nevaeh")
 
     assert("SparkyIsaiah" in result, "crack in not finding pet1 + first as password")
+	
+def test_Isaiah_child1_():
+	result = possible_passwords("Isaiah", "Bailey", "03/29/1956",
+                                "03/27/1951", "Morgan", "Brody", "09/20/1954",
+                                "Sparky", "Mia", "Ava", "Serenity", "Nevaeh")
+	assert("Serenity" in result, "crack is not finding cild1 as password")
+
+	
+def test_Isaiah_child1_first():
+	result = possible_passwords("Isaiah", "Bailey", "03/29/1956",
+                                "03/27/1951", "Morgan", "Brody", "09/20/1954",
+                                "Sparky", "Mia", "Ava", "Serenity", "Nevaeh")
+	assert("SerenityIsaiah" in result, "crack is not finding cild1 + first as password")
+	
+	
+def test_Isaiah_child1_spouce():
+	result = possible_passwords("Isaiah", "Bailey", "03/29/1956",
+                                "03/27/1951", "Morgan", "Brody", "09/20/1954",
+                                "Sparky", "Mia", "Ava", "Serenity", "Nevaeh")
+	assert("SerenityBrody" in result, "crack is not finding cild1 + spouce as password")
+	
+	
+def test_Isaiah_child1_DOB():
+	result = possible_passwords("Isaiah", "Bailey", "03/29/1956",
+                                "03/27/1951", "Morgan", "Brody", "09/20/1954",
+                                "Sparky", "Mia", "Ava", "Serenity", "Nevaeh")
+	assert("Serenity32956" in result, "crack is not finding cild1 + DOB as password")
+	
+	
+def test_Isaiah_child1_exclimationpoint():
+	result = possible_passwords("Isaiah", "Bailey", "03/29/1956",
+                                "03/27/1951", "Morgan", "Brody", "09/20/1954",
+                                "Sparky", "Mia", "Ava", "Serenity", "Nevaeh")
+	assert("Serenity!" in result, "crack is not finding cild1 + ! as password")
+
+	
+def test_Isaiah_child1_pet():
+	result = possible_passwords("Isaiah", "Bailey", "03/29/1956",
+                                "03/27/1951", "Morgan", "Brody", "09/20/1954",
+                                "Sparky", "Mia", "Ava", "Serenity", "Nevaeh")
+	assert("SerenitySparky" in result, "crack is not finding cild1 + pet as password")
+
+	
+def test_Isaiah_child1_():
+	result = possible_passwords("Isaiah", "Bailey", "03/29/1956",
+                                "03/27/1951", "Morgan", "Brody", "09/20/1954",
+                                "Sparky", "Mia", "Ava", "Serenity", "Nevaeh")
+	assert("SerenityNevaeh" in result, "crack is not finding cild1 + child2 as password")
+
+	
+def test_Isaiah_child1_date2year():
+	result = possible_passwords("Isaiah", "Bailey", "03/29/1956",
+                                "03/27/1951", "Morgan", "Brody", "09/20/1954",
+                                "Sparky", "Mia", "Ava", "Serenity", "Nevaeh")
+	assert("Serenity51" in result, "crack is not finding cild1 + date1year as password")
+
 
 
